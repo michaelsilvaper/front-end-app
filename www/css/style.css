@@ -1,0 +1,131 @@
+/* Empty. Add your own CSS if you like */
+body {
+    font-family: 'Muli', sans-serif;
+}
+
+.bar.bar-stable {
+    background-color: #f7ae4a;
+    border-color: #f49f2b;
+    color: #fff;
+}
+
+.bar.bar-stable .title{
+    color: #fff;
+}
+
+.bar.bar-stable .button{
+    color: #fff;
+}
+
+.default-content {
+    background-color: #f8f5f1;
+}
+
+.chat-box {
+    padding: 15px;
+    height: calc(100vh - 46px);
+    overflow: scroll;
+    background-color: #f8f5f1;
+}
+
+.login-message {
+    font-size: 17px;
+    width: 100%;
+    text-align: right;
+    color: #f7ae4a;
+    text-decoration: underline;
+    margin-top: 8px;
+}
+
+.message-date {
+    font-size: 10px;
+    color: #382407;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+
+.message {
+    padding: 15px;
+    padding-right: 30px;
+    background-color: #ffff;
+    margin-bottom: 12px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    font-size: 18px;
+    line-height: 22px;
+    width: auto;
+    display: table;
+    clear: both;
+}
+
+.user-message {
+    background-color: #f7ae4a;
+    color: #fff;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 20px;
+    float: right;
+    clear: both;
+}
+
+.user-message-date {
+    float: right;
+    clear: both;
+}
+
+.textarea-box {
+    position: fixed;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    background-color: #fff;
+    height: 150px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    box-shadow: 0px 0px 2px #ccc;
+}
+
+.textarea-title {
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #aaa;
+    font-size: 15px;
+}
+
+.textarea-text {
+    width: 100% !important;
+    height: 85px !important;
+    margin-top: 25px;
+}
+
+.textarea-text > textarea {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 0;
+    font-size: 15px;
+}
+
+.send-button {
+    float: right;
+    margin-right: 20px;
+    font-size: 28px;
+    color: #666;
+}
+
+.button-box{
+    width: 100%;
+    text-align: center;
+}
+.option-button {
+    margin-top: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+    background-color: #f7ae4a !important;
+}
+
+.button-box + .message{
+    margin-top: 30px;
+}

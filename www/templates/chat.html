@@ -1,0 +1,60 @@
+<ion-view view-title="Chat" class="view-title">
+  <ion-content class="default-content">
+
+    <div class="textarea-box" ng-if="showTextArea">
+        <div class="textarea-text">
+          <textarea ng-click="clearTextArea()">{{textAreaText}}</textarea>
+        </div>
+        <ion-icon name="send" class="send-button" ng-click="sendTextArea()"></ion-icon>
+    </div>
+
+    <div class="chat-box">
+        <div class="login-message">Login or create account</div>
+    
+        <div class="messages">
+
+          <div class="message-date" ng-if="botInitialMessageDate">
+              {{botInitialMessageDate}}
+          </div>
+
+          <div class="message bot-message" ng-repeat="message in initialMessages">
+              {{message}}
+          </div>
+
+          <div class="button-box" ng-repeat="option in initialOptions">
+              <button class="button button-calm option-button" ng-click="goToUnit(option.next)">
+                  {{option.label}}
+              </button>
+          </div>
+          
+          <!--
+    
+          <div class="message bot-message">
+            Hi :D
+          </div>
+    
+          <div class="message bot-message">
+              I’m Youper, your emotional health assistant.
+          </div>
+          <div class="message bot-message">
+              How are you ?
+          </div>
+    
+          <div class="message-date user-message-date">
+              August 31st 2019, 5:15
+          </div>
+    
+          <div class="message user-message">
+              I’m feeling fairly grateful :D
+          </div>
+          <div class="message user-message">
+              I didn’t identify any factors
+          </div>
+    
+          <div class="message bot-message">
+              :D
+          </div> -->
+        </div>
+    </div>
+  </ion-content>
+</ion-view>
